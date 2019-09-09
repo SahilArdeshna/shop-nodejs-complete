@@ -11,6 +11,7 @@
   "author": "Sahil Ardeshna",
   "license": "ISC",
   "devDependencies": {
+    "env-cmd": "^10.0.1",
     "nodemon": "^1.18.3"
   },
   "dependencies": {
@@ -21,7 +22,6 @@
     "connect-mongodb-session": "^2.2.0",
     "csurf": "^1.10.0",
     "ejs": "^2.6.1",
-    "env-cmd": "^10.0.1",
     "express": "^4.16.3",
     "express-handlebars": "^3.0.0",
     "express-session": "^1.16.2",
