@@ -29,8 +29,8 @@ const store = new MongoDbStore({
 
 const csrfProtection = csrf();
 
-const privetKey = fs.readFileSync('server.key');
-const cerificate = fs.readFileSync('server.cert');
+// const privetKey = fs.readFileSync('server.key');
+// const cerificate = fs.readFileSync('server.cert');
 
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -126,8 +126,8 @@ mongoose.set('useFindAndModify', false);
 
 mongoose.connect(MONGODB_URI)
   .then(result => {
-    https.createServer({ key: privetKey, cert: cerificate }, app).listen(process.env.PORT || 3000);
-    // app.listen(process.env.PORT || 3000);
+    // https.createServer({ key: privetKey, cert: cerificate }, app).listen(process.env.PORT || 3000);
+    app.listen(process.env.PORT || 3000);
     console.log('CONNECTED!');
   })
   .catch(err => {
