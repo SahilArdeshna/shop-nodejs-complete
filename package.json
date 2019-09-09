@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "env-cmd -f ./config/dev.env node app.js",
-    "dev": "nodemon app.js -e js,ejs,pug"
+    "start": "node app.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon app.js -e js,ejs,pug"
   },
   "author": "Sahil Ardeshna",
   "license": "ISC",
